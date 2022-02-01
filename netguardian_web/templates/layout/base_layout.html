@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'layout/head.html' %}
+
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
+  <div class="site-wrapper overflow-hidden position-relative">    <!-- Site Header -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="{% static './image/preloader.gif' %}" alt="preloader">
+   </div>
+   </div>    -->
+      <!--Site Header Area -->
+      {% include 'layout/header.html' %}
+      <!-- navbar- -->
+      {% block body %}{% endblock %}
+      <!--Footer Area-->
+      {% include 'layout/footer.html' %}
+  </div>
+  {% include 'layout/scripts.html' %}
+</body>
+</html>
