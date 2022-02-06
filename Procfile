@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:$PORT --noreload
+web: python netguardian_web/manage.py runserver 0.0.0.0:$PORT --noreload
