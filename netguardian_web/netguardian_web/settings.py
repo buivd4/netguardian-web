@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("NGW_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("NGW_DEBUG", False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] if DEBUG else ["netguardian_web.tech", "netguardian-web.herokuapp.com"]
 
 
 # Application definition
